@@ -7,5 +7,4 @@
   </head>
   <body style="background-color: #c67b19;">
 
-  </body>
-</html>
+<?php include("footer.php"); ?>
