@@ -13,7 +13,8 @@
      Title : <input type="text" name="name_Title"><br><br>
      First Name : <input type="text" name="name_First"><br><br>
      Last Name : <input type="text" name="name_Last"><br><br>
-     User Type : <input type="text" name="user classes_classes_id"><br><br>
+     email : <input type="email" name="email"><br><br>
+     User Type : <input type="number" name="user_classes_id"><br><br>
      <input type="submit" value="Submit">
      </form>
   </body>

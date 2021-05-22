@@ -1,8 +1,19 @@
 <?php
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
+$name_Title = filter_input(INPUT_POST, 'name_Title');
+$name_First = filter_input(INPUT_POST, 'name_First');
+$name_Last = filter_input(INPUT_POST, 'name_Last');
+$email = filter_input(INPUT_POST, 'email');
+$user_classes_id = filter_input(INPUT_POST, 'user_classes_id');
+
 if (!empty($username)){
 if (!empty($password)){
+if (!empty($name_Title)){
+if (!empty($name_First)){
+if (!empty($name_Last)){
+if (!empty($email)){
+if (!empty($user_classes_id)){
 $host = "localhost";
 $dbusername = "root";
 $dbpassword = "root";
@@ -13,8 +24,8 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-$sql = "INSERT INTO account (username, password)
-values ('$username','$password')";
+$sql = "INSERT INTO users (username, password, name_Title, name_First, name_Last, email, user_classes_id)
+values ('$username','$password','$name_Title','$name_First','$name_Last','$email','$user_classes_id')";
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
 }
@@ -25,13 +36,14 @@ echo "Error: ". $sql ."
 $conn->close();
 }
 }
-else{
-echo "Password should not be empty";
-die();
+}
+}
+}
+}
 }
 }
 else{
-echo "Username should not be empty";
+echo "Manglende info";
 die();
 }
 ?>
