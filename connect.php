@@ -6,8 +6,7 @@ if (!empty($password)){
 $host = "localhost";
 $dbusername = "root";
 $dbpassword = "root";
-$dbname = "crmopgave3";
-// Create connection
+$dbname = "crmmodulopgave3";
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 if (mysqli_connect_error()){
 die('Connect Error ('. mysqli_connect_errno() .') '
