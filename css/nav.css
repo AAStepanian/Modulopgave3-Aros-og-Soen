@@ -27,7 +27,6 @@ nav{
 
 #menu li{
   float: left;
-  box-shadow: 1px 0 0 #444;
   position: relative;
 }
 
