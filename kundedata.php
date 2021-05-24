@@ -20,12 +20,11 @@
 
      <table id="customertable">
 <tr>
-<th>First name</th>
+<th>Firs5t name</th>
 <th>Last name</th>
 <th>Title</th>
 <th>username</th>
 <th>E-mail address</th>
-<th>User type</th>
 <th>User type</th>
 <th>User id</th>
 </tr>
@@ -35,8 +34,7 @@ $conn = mysqli_connect("localhost", "root", "root", "crmmodulopgave3");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT name_First, name_Last, name_Title, username, email, user_classes_id FROM users";
-$sql = "SELECT name FROM user classes";
+$sql = "SELECT name_First, name_Last, name_Title, username, email, user_classes_id, id FROM users";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
@@ -48,7 +46,6 @@ echo "<tr>
 <td>" . $row["username"]. "</td>
 <td>" . $row["email"]. "</td>
 <td>" . $row["user_classes_id"]. "</td>
-<td>" . $row["name"]. "</td>
 <td>" . $row["id"]. "</td>
 </tr>";
 }
