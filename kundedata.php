@@ -20,7 +20,7 @@
 
      <table id="customertable">
 <tr>
-<th>Firs5t name</th>
+<th>First name</th>
 <th>Last name</th>
 <th>Title</th>
 <th>username</th>
