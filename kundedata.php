@@ -18,11 +18,16 @@
      <input type="submit" value="Submit">
      </form>
 
-     <table>
+     <table id="customertable">
 <tr>
-<th>Id</th>
-<th>Username</th>
-<th>Password</th>
+<th>First name</th>
+<th>Last name</th>
+<th>Title</th>
+<th>username</th>
+<th>E-mail address</th>
+<th>User type</th>
+<th>User type</th>
+<th>User id</th>
 </tr>
 <?php
 $conn = mysqli_connect("localhost", "root", "root", "crmmodulopgave3");
@@ -30,18 +35,28 @@ $conn = mysqli_connect("localhost", "root", "root", "crmmodulopgave3");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT id, username, password FROM users";
+$sql = "SELECT name_First, name_Last, name_Title, username, email, user_classes_id FROM users";
+$sql = "SELECT name FROM user classes";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["id"]. "</td><td>" . $row["username"] . "</td><td>"
-. $row["password"]. "</td></tr>";
+echo "<tr>
+<td>" . $row["name_First"]. "</td>
+<td>" . $row["name_Last"] . "</td>
+<td>" . $row["name_Title"]. "</td>
+<td>" . $row["username"]. "</td>
+<td>" . $row["email"]. "</td>
+<td>" . $row["user_classes_id"]. "</td>
+<td>" . $row["name"]. "</td>
+<td>" . $row["id"]. "</td>
+</tr>";
 }
 echo "</table>";
 } else { echo "0 results"; }
 $conn->close();
 ?>
 </table>
+
   </body>
 </html>
