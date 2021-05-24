@@ -27,7 +27,7 @@ else{
 $sql = "INSERT INTO users (username, password, name_Title, name_First, name_Last, email, user_classes_id)
 values ('$username','$password','$name_Title','$name_First','$name_Last','$email','$user_classes_id')";
 if ($conn->query($sql)){
-header("kundedata.php");
+header("location: kundedata.php");
 }
 else{
 echo "Error: ". $sql ."
