@@ -1,22 +1,10 @@
 <nav>
 <ul id="menu">
-  <li><a href="#">Kunder</a>
-    <ul>
-        <li><a href="#">Interne</a></li>
-        <li><a href="#">Eksterne</a></li>
-    </ul>
+  <li><a href="kundedata.php">Kunder</a>
   </li>
-  <li><a href="#">Opgaver</a>
-    <ul>
-      <li><a href="#">Interne</a></li>
-      <li><a href="#">Eksterne</a></li>
-    </ul>
+  <li><a href="#">Økonomi</a>
   </li>
-  <li><a href="#">Kontakter</a>
-    <ul>
-      <li><a href="#">Interne</a></li>
-      <li><a href="#">Eksterne</a></li>
-    </ul>
+  <li><a href="index.php">Beskeder</a>
   </li>
 </ul>
 </nav>
