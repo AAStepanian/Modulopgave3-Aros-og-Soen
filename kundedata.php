@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,11 +10,11 @@
   <body style="background-color: #c67b19;">
     <div>
      <form method="post" action="connect.php">
-     <input type="text" name="username" placeholder="Username" ><br><br>
-     <input type="password" name="password" placeholder="Password" ><br><br>
-     <input type="text" name="name_Title" placeholder="Usertype" ><br><br>
-     <input type="text" name="name_First" placeholder="Name" ><br><br>
-     <input type="text" name="name_Last" placeholder="Lastname" ><br><br>
+     <input type="text" name="username" placeholder="Username"> <br><br>
+     <input type="password" name="password" placeholder="Password"> <br><br>
+     <input type="text" name="name_Title" placeholder="Usertype"> <br><br>
+     <input type="text" name="name_First" placeholder="Name"> <br><br>
+     <input type="text" name="name_Last" placeholder="Lastname"> <br><br>
      <input type="email" name="email" placeholder="E-mail" ><br><br>
      <input type="number" name="user_classes_id" placeholder="Userclass" ><br><br>
      <input type="submit" value="Add client">
@@ -24,7 +25,7 @@
 <th>First name</th>
 <th>Last name</th>
 <th>Title</th>
-<th>username</th>
+<th>Username</th>
 <th>E-mail address</th>
 <th>User type</th>
 <th>User id</th>

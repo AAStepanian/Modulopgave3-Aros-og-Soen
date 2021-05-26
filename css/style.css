@@ -6,8 +6,8 @@ table {
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    text-align: center;
-
+    text-align: left;
+    background-color: white;
 
 }
 table thead tr {
@@ -17,14 +17,15 @@ table thead tr {
 }
 table th,
 table td {
-    padding: 12px 15px;
+    padding: 10px 15px;
+    border-right: 1px solid black;
 }
 table tbody tr {
     border: 1px solid black;
 }
 
 table tbody tr:first-of-type {
-    background-color: yellow;
+    background-color: #b7a712;
 }
 table tbody tr:last-of-type {
     border-bottom: 1px solid black;

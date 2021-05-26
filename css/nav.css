@@ -9,10 +9,10 @@ nav{
 }
 
 #menu{
-  width: 407px ;
+  width: 400px ;
   margin: 50px auto;
   background-color: #b7a712;
-  border-radius: 0px;
+  border-radius: 1px;
 }
 
 #menu:before,
@@ -36,7 +36,7 @@ nav{
   text-transform: uppercase;
   font-family: arial;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 #menu li:hover > a{
