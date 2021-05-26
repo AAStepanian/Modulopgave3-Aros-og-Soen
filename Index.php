@@ -8,7 +8,7 @@ header("location: profile.php"); // Redirecting To Profile Page
 <html>
 <head>
 <title>Login Form in PHP with Session</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div id="login">
