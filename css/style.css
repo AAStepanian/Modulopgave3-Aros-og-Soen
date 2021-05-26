@@ -61,3 +61,10 @@ form {
 }
 input[type=submit]:hover {
   background-color: lightblue;
+}
+#logout {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}

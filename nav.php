@@ -1,12 +1,12 @@
 <nav>
 <ul id="menu">
-  <li><a href="Profile.php">Profil</a>
+  <li><a href="Profile.php">Profile</a>
   </li>
-  <li><a href="kundedata.php">Kunder</a>
+  <li><a href="kundedata.php">Customers</a>
   </li>
-  <li><a href="#">Økonomi</a>
+  <li><a href="#">Accounting</a>
   </li>
-  <li><a href="index.php">Beskeder</a>
+  <li><a href="#">Messages</a>
   </li>
 </ul>
 </nav>
