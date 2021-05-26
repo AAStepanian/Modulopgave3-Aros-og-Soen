@@ -1,5 +1,6 @@
 <?php include("header.php"); ?>
-
+<?php include('session.php');
+if(!isset($_SESSION['login_user'])) ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
