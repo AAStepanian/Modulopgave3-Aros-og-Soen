@@ -9,6 +9,7 @@
     if(!isset($_SESSION['login_user'])) ?>
     <b id="welcome">Logged in as: <i><?php echo $login_session; ?></i></b>
   <b id="logout"><a href="logout.php">Log Out</a></b>
+  <p id="overskrift"> Aros og Søn A/S </p>
   </head>
-  <body>
+  <body style="background-color: #c67b19;">
     <?php include("nav.php"); ?>

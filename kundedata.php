@@ -1,12 +1,5 @@
 <?php include("header.php"); ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Modulopgave 3</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body style="background-color: #c67b19;">
+
     <div>
      <form method="post" action="connect.php">
      <input type="text" name="username" placeholder="Username"> <br><br>
