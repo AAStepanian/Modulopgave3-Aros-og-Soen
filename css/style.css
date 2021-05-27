@@ -75,3 +75,7 @@ input[type=submit]:hover {
   font-size: 50px;
   font-family: fantasy;
 }
+
+#login {
+  background-color: #c67b19;
+}

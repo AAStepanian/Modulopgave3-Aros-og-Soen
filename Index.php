@@ -8,17 +8,21 @@ header("location: profile.php"); // Redirecting To Profile Page
 <html>
 <head>
 <title>Login Form in PHP with Session</title>
-<link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<link rel="stylesheet" href="css/style.css">
+<body style="background-color: #c67b19;">
 <div id="login">
-<h2>Login Form</h2>
-<form action="" method="post">
-<label>UserName :</label>
+<h2>Log-in</h2>
+<form id="login" action="" method="post">
+<ul>
+<label>Username:</label>
 <input id="name" name="username" placeholder="username" type="text">
-<label>Password :</label>
+</ul>
+<ul>
+<label>Password:</label>
 <input id="password" name="password" placeholder="**********" type="password"><br><br>
 <input name="submit" type="submit" value=" Login ">
+</ul>
 <span><?php echo $error; ?></span>
 </form>
 </div>
